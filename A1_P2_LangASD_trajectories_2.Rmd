@@ -198,6 +198,12 @@ Remember to plot the data first and then to run a statistical test.
 
 #Exercise 2
 
+scatter = ggplot(sub_01, aes(Diagnosis, Gender))
+scatter + geom_point() + geom_smooth(method = "lm")
+
+scatter = ggplot(sub_01, aes(Age, Diagnosis))
+scatter + geom_point() + geom_smooth(method = "lm")
+
 scatter = ggplot(sub_01, aes(ADOS, ExpressiveLangRaw))
 scatter + geom_point() + geom_smooth(method = "lm")
 #The scatterplot shows that the higers ADOS score a subject has, the lower expressive IQ they have.
